@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
+
 <body>
     <form id="form">
-        <label for="num1">Number 1:</label>
-        <input type="text" id="num1" />
+        <div class="num1">
+            <label class="label" for="num1">Number 1:</label>
+            <input type="text" id="num1" />
+        </div>
+        
         <br />
-        <label for="num2">Number 2:</label>
-        <input type="text" id="num2" />
+
+        <div class="num2">
+            <label class="label" for="num1">Number 2:</label>
+            <input type="text" id="num1" />
+        </div>
+
         <br />
-        <button type="submit">Add</button>
+        <button type="submit" class="btn">Add</button>
     </form>
       <div>Result: <span id="result"></span></div>
       <div>Log:</div>

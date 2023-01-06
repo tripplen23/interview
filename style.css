@@ -1,0 +1,18 @@
+body {
+    margin: 20px;
+    padding: 0;
+    background-color: blueviolet;
+    
+}
+
+.btn {
+    margin: 20px;
+    padding: 5px;
+    background-color: chartreuse;
+    color: brown;
+}
+
+.label {
+    font-weight: bold;
+    margin-top: 10px;
+}
