@@ -53,7 +53,20 @@ class MyBigNumber {
     }
 }
 
-const bigNumber = new MyBigNumber();
-const result = bigNumber.sum("369", "369369");
-console.log(result); 
-console.log(bigNumber.log);
+const form = document.getElementById('form');
+const num1Input = document.getElementById('num1');
+const num2Input = document.getElementById('num2');
+const resultOutput = document.getElementById('result');
+const logOutput = document.getElementById('log');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const num1 = num1Input.value;
+  const num2 = num2Input.value;
+
+  const bigNumber = new MyBigNumber();
+  const result = bigNumber.sum(num1, num2);
+  resultOutput.textContent = result;
+  logOutput.textContent = bigNumber.log;
+});
